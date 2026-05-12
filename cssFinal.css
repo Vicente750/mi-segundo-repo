@@ -1,0 +1,85 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Menu flex */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: black;
+  padding: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* hover menu*/
+.menu a:hover {
+  color: yellow;
+}
+
+/*galeria flex */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+}
+
+.galeria img {
+  width: calc(50% - 10px); /* 2 columnas */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.galeria img:nth-child(4) {
+  height: 320px; /* el doble aprox */
+}
+
+/*about flex*/
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.about img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+/* formulario */
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+}
+
+/* botón */
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+/* hover botón */
+button:hover {
+  background-color: red;
+}
